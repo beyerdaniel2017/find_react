@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" class="loader">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Findious">
+    <meta name="author" content="Findious">
+    <title>Findious</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/componentForm.css" />
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/modernizr.custom.js"></script>
+</head>
+<body class="user-page red">
+<div class="loading-box">
+  <div class="logo-holder"><img class="logo" src="images/black-logo.png" alt="Findious" /></div>
+</div>
+<div class="heading-wrapper result-page">
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-xs-4 content-wrapper result-header">
+          <a href="index.html"><img class="logo" src="images/black-logo.png" alt="Findious" /></a>
+          <div class="wrapper-inner hidden-xs hidden-sm">
+            <div class="input-group">
+              <input type="text" id="searchInput" class="form-control" placeholder="Cafe in Montego Bay" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Coffee shop in Negril'" />
+              <span class="input-group-btn">
+              <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </span> </div>
+            <div class="suggestion-box">
+              <div class="search">
+                <h1 class="hidden">Heading for SEO</h1>
+                <h2 class="hidden">Heading for SEO</h2>
+                <h3 class="hidden">Heading for SEO</h3>
+                <h4>Search suggestions</h4>
+                <ul>
+                <li><a href="index2.html">Home v-2</a></li>
+              <li><a href="landing1.html">Cafe landing v-1</a></li>
+              <li><a href="landing2.html">Cafe landing v-2</a></li>
+              <li><a href="landing3.html">Cafe landing v-3</a></li>
+              <li><a href="result.html">Results Page</a></li>
+              <li><a href="result2.html">Results Page v-2</a></li>
+            </ul>
+              </div>
+              <div class="business">
+                <h4>Business suggestions</h4>
+                <ul>
+                  <li><a href="">K's Cafe</a></li>
+                  <li><a href="">Bookwiz Bookstore & Cafe</a></li>
+                  <li><a href="">Sinclair Computer Cafe, Electronics and Accessories</a></li>
+                  <li><a href="">Natural Gloves Tour & Internet Cafe</a></li>
+                  <li><a href="">Rituals Coffe House </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-md-5 text-right">
+          <button class="plus-btn" id="menu-trigger"><i class="fa fa-plus"></i></button>
+          <div id="menu-overlay" class="overlay overlay-hugeinc">
+            <button type="button" class="menu-container--close overlay-close"></button>
+            <div class="row">
+              <div class="menu-back" style="background-image: url(images/background.jpg)">
+                <h3>About Us</h3>
+              </div>
+              <div class="col-sm-6">
+                <div>
+
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#signup" aria-controls="signup" role="tab" data-toggle="tab">Signup</a></li>
+                    <li role="presentation"><a href="#aboutTab" aria-controls="aboutTab" role="tab" data-toggle="tab">About Us</a></li>
+                    <li role="presentation"><a href="#contactTab" aria-controls="contactTab" role="tab" data-toggle="tab">Contact</a></li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="signup">
+                      <p> Everyday consumers want to know that your company exists <span>- GET LISTED TODAY!</span> <i class="fa fa-angle-down" aria-hidden="true"></i> </p>
+                      <form id="theForm" class="simform" autocomplete="off">
+                        <div class="simform-inner">
+                          <ol class="questions">
+                            <li> <span>
+                              <label for="q1">What Is The Name of Your Business? </label>
+                              </span>
+                              <input id="q1" name="q1" type="text"/>
+                            </li>
+                            <li> <span>
+                              <label for="q2">Where do you live?</label>
+                              </span>
+                              <input id="q2" name="q2" type="text"/>
+                            </li>
+                            <li> <span>
+                              <label for="q3">What time do you got to work?</label>
+                              </span>
+                              <input id="q3" name="q3" type="text"/>
+                            </li>
+                            <li> <span>
+                              <label for="q4">How do you like your veggies?</label>
+                              </span>
+                              <input id="q4" name="q4" type="text"/>
+                            </li>
+                            <li> <span>
+                              <label for="q5">What book inspires you?</label>
+                              </span>
+                              <input id="q5" name="q5" type="text"/>
+                            </li>
+                            <li> <span>
+                              <label for="q6">What's your profession?</label>
+                              </span>
+                              <input id="q6" name="q6" type="text"/>
+                            </li>
+                          </ol>
+                          <!-- /questions -->
+                          <button class="submit" type="submit">Send answers</button>
+                          <div class="controls">
+                            <button class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i> </button>
+                            <div class="progress"></div>
+                            <span class="number"> <span class="number-current"></span> <span class="number-total"></span> </span> <span class="error-message"></span> </div>
+                          <!-- / controls -->
+                        </div>
+                        <!-- /simform-inner -->
+                        <span class="final-message"></span>
+                      </form>
+                      <!-- /simform -->
+                      <button class="btn btn-continue">Continue <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="aboutTab">
+                      <p> Everyday consumers want to know that your company exists Everyday consumers want to know that your company exists Everyday consumers want to know that your company exists </p>
+                      <p> Everyday consumers want to know that your company exists Everyday consumers want to know that your company exists Everyday consumers want to know that your company exists </p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="contactTab">
+                      <p> Feel free to contact us at any time, and learn more about our products & services. <i class="fa fa-angle-down" aria-hidden="true"></i> </p>
+                      <form id="theForm2" class="simform" autocomplete="off">
+                        <div class="simform-inner">
+                          <ol class="questions">
+                            <li> <span>
+                              <label for="q11">Full Name</label>
+                              </span>
+                              <input id="q11" name="q11" type="text"/>
+                            </li>
+                            <li> <span>
+                              <label for="q12">Where do you live?</label>
+                              </span>
+                              <input id="q12" name="q12" type="text"/>
+                            </li>
+                            <li> <span>
+                              <label for="q13">What time do you got to work?</label>
+                              </span>
+                              <input id="q13" name="q13" type="text"/>
+                            </li>
+                          </ol>
+                          <!-- /questions -->
+                          <button class="submit" type="submit">Send answers</button>
+                          <div class="controls">
+                            <button class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i> </button>
+                            <div class="progress"></div>
+                            <span class="number"> <span class="number-current"></span> <span class="number-total"></span> </span> <span class="error-message"></span> </div>
+                          <!-- / controls -->
+                        </div>
+                        <!-- /simform-inner -->
+                        <span class="final-message"></span>
+                      </form>
+                      <!-- /simform -->
+                      <button class="btn btn-continue">Continue <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="whether" id="icon">
+            <span class="weather-img"><img src="images/weather.svg" alt="image description"></span>
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- (c) ammap.com | SVG weather icons -->
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewbox="0 0 64 64">
+              <defs>
+                <filter id="blur" width="200%" height="200%">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+                  <feOffset dx="0" dy="4" result="offsetblur"/>
+                  <feComponentTransfer>
+                    <feFuncA type="linear" slope="0.05"/>
+                  </feComponentTransfer>
+                  <feMerge>
+                    <feMergeNode/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+              <g filter="url(#blur)" id="cloudy">
+                <g transform="translate(20,10)">
+                    <g class="am-weather-cloud-1">
+                        <path d="M47.7,35.4     c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3     c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#91C0F8" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-10,-8), scale(0.6)"/>
+                    </g>
+                    <g class="am-weather-cloud-2">
+                        <path d="M47.7,35.4     c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3     c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#57A0EE" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-20,-11)"/>
+                    </g>
+                </g>
+              </g>
+              <g filter="url(#blur)" id="cloudy-day-3">
+                  <g transform="translate(20,10)">
+                      <g transform="translate(0,16)">
+                          <g class="am-weather-sun">
+                              <g>
+                                  <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                              </g>
+                              <g transform="rotate(45)">
+                                  <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                              </g>
+                              <g transform="rotate(90)">
+                                  <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                              </g>
+                              <g transform="rotate(135)">
+                                  <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                              </g>
+                              <g transform="rotate(180)">
+                                  <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                              </g>
+                              <g transform="rotate(225)">
+                                  <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                              </g>
+                              <g transform="rotate(270)">
+                                  <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                              </g>
+                              <g transform="rotate(315)">
+                                  <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                              </g>
+                          </g>
+                          <circle cx="0" cy="0" fill="orange" r="5" stroke="orange" stroke-width="2"/>
+                      </g>
+                      <g class="am-weather-cloud-2">
+                          <path d="M47.7,35.4c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3    c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#57A0EE" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-20,-11)"/>
+                      </g>
+                  </g>
+              </g>
+              <g filter="url(#blur)" id="cloudy-night-3">
+                  <g transform="translate(20,10)">
+                      <g transform="translate(16,4), scale(0.8)">
+                          <g class="am-weather-moon-star-1">
+                              <polygon fill="orange" points="3.3,1.5 4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7" stroke="none" stroke-miterlimit="10"/>
+                          </g>
+                          <g class="am-weather-moon-star-2">
+                              <polygon fill="orange" points="3.3,1.5 4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7" stroke="none" stroke-miterlimit="10" transform="translate(20,10)"/>
+                          </g>
+                          <g class="am-weather-moon">
+                              <path d="M14.5,13.2c0-3.7,2-6.9,5-8.7   c-1.5-0.9-3.2-1.3-5-1.3c-5.5,0-10,4.5-10,10s4.5,10,10,10c1.8,0,3.5-0.5,5-1.3C16.5,20.2,14.5,16.9,14.5,13.2z" fill="orange" stroke="orange" stroke-linejoin="round" stroke-width="2"/>
+                          </g>
+                      </g>
+                      <g class="am-weather-cloud-2">
+                          <path d="M47.7,35.4    c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3    c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#57A0EE" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-20,-11)"/>
+                      </g>
+                  </g>
+              </g>
+              <g filter="url(#blur)" id="day">
+                  <g transform="translate(32,32)">
+                      <g class="am-weather-sun am-weather-sun-shiny am-weather-easing-ease-in-out">
+                          <g>
+                              <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
+                          </g>
+                          <g transform="rotate(45)">
+                              <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
+                          </g>
+                          <g transform="rotate(90)">
+                              <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
+                          </g>
+                          <g transform="rotate(135)">
+                              <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
+                          </g>
+                          <g transform="rotate(180)">
+                              <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
+                          </g>
+                          <g transform="rotate(225)">
+                              <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
+                          </g>
+                          <g transform="rotate(270)">
+                              <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
+                          </g>
+                          <g transform="rotate(315)">
+                              <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3" />
+                          </g>
+                      </g>
+                      <circle cx="0" cy="0" fill="orange" r="5" stroke="orange" stroke-width="2"/>
+                  </g>
+              </g>
+              <g filter="url(#blur)" id="night">
+                  <g transform="translate(20,20)">
+                      <g class="am-weather-moon-star-1">
+                          <polygon fill="orange" points="3.3,1.5 4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7" stroke="none" stroke-miterlimit="10"/>
+                      </g>
+                      <g class="am-weather-moon-star-2">
+                          <polygon fill="orange" points="3.3,1.5 4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7" stroke="none" stroke-miterlimit="10" transform="translate(20,10)"/>
+                      </g>
+                      <g class="am-weather-moon">
+                          <path d="M14.5,13.2c0-3.7,2-6.9,5-8.7   c-1.5-0.9-3.2-1.3-5-1.3c-5.5,0-10,4.5-10,10s4.5,10,10,10c1.8,0,3.5-0.5,5-1.3C16.5,20.2,14.5,16.9,14.5,13.2z" fill="orange" stroke="orange" stroke-linejoin="round" stroke-width="2"/>
+                      </g>
+                  </g>
+              </g>
+              <g filter="url(#blur)" id="rainy-6">
+                  <g transform="translate(20,10)">
+                      <g>
+                          <path d="M47.7,35.4c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3    c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#57A0EE" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-20,-11)"/>
+                      </g>
+                  </g>
+                  <g transform="translate(31,46), rotate(10)">
+                      <line class="am-weather-rain-1" fill="none" stroke="#91C0F8" stroke-dasharray="4,4" stroke-linecap="round" stroke-width="2" transform="translate(-4,1)" x1="0" x2="0" y1="0" y2="8" />
+                      <line class="am-weather-rain-2" fill="none" stroke="#91C0F8" stroke-dasharray="4,4" stroke-linecap="round" stroke-width="2" transform="translate(0,-1)" x1="0" x2="0" y1="0" y2="8" />
+                      <line class="am-weather-rain-1" fill="none" stroke="#91C0F8" stroke-dasharray="4,4" stroke-linecap="round" stroke-width="2" transform="translate(4,0)" x1="0" x2="0" y1="0" y2="8" />
+                  </g>
+              </g>
+            </svg>
+            <p><span id="temp"></span> <span class="whether-format"> <a>F<span class="circle"></span></a> </span> </p>
+            <span id="location"><a href="#" class="weather-trigger"></a></span> </div>
+          </div>
+        </div>
+        <div class="col-xs-12 show-xs content-wrapper result-header">
+          <div class="wrapper-inner visible-xs visible-sm">
+            <div class="input-group">
+              <input type="text" id="searchInputMobile" class="form-control" placeholder="Cafe in Montego Bay" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Coffee shop in Negril'" />
+              <span class="input-group-btn">
+              <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </span> </div>
+            <div class="suggestion-box">
+              <div class="search">
+                <h4>Search suggestions</h4>
+                <ul>
+                  <li><a href="">Cafe</a></li>
+                </ul>
+              </div>
+              <div class="business">
+                <h4>Business suggestions</h4>
+                <ul>
+                  <li><a href="">K's Cafe</a></li>
+                  <li><a href="">Bookwiz Bookstore & Cafe</a></li>
+                  <li><a href="">Sinclair Computer Cafe, Electronics and Accessories</a></li>
+                  <li><a href="">Natural Gloves Tour & Internet Cafe</a></li>
+                  <li><a href="">Rituals Coffe House </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+<section id="about" class="about-section clearfix">
+  <div class="col-sm-6 user-video-wrapper hidden-xs" style="background-image: url(images/background1.jpg)">
+  </div>
+  <div class="col-sm-6 page-navigation">
+    <button class="btn close-btn overlay-close"></button>
+    <h1>Alexander<br/>
+      cafe</h1>
+    <div class="dotstyle dotstyle-tooltip">
+      <ul>
+        <li class="current" id="about-link"><a href="#about">Home</a></li>
+        <li id="whoWeAre-link"><a href="#whoWeAre">About</a></li>
+        <li id="insights-link"><a href="#insights">Insights</a></li>
+        <li id="gallery-link"><a href="#gallery">Gallry</a></li>
+        <li id="testimonials-link"><a href="#testimonials">Reviews</a></li>
+        <li id="contact-link"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-sm-6 user-video-wrapper visible-xs" style="background-image: url(images/background1.jpg)">
+  </div>
+</section>
+<section id="whoWeAre" class="who_we_are clearfix" >
+  <div class="col-sm-5 red-bg">
+    <h2>Who We Are</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+  </div>
+  <div class="col-sm-7"> <img class="visible-md visible-lg" src="images/coffee-cup.png"> <img class="visible-sm visible-xs" src="images/cup_03.png" alt="image description"> </div>
+</section>
+<section class="animation-section clearfix" id="insights">
+  <h2>Quich Insights</h2>
+  <div class="col-sm-4">
+    <div class="big-circle first"> <span class="animation1 small-circle"></span> <span class="animation2 small-circle"></span> <span class="animation3 small-circle"></span>
+      <div class="amount"><span class="amount-number">15</span></div>
+      <p>Years in Business</p>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="big-circle second"> <span class="animation4 small-circle"></span> <span class="animation5 small-circle"></span> <span class="animation6 small-circle"></span>
+      <div class="amount"><span class="amount-number">20000</span></div>
+      <p>Customers a year</p>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="big-circle third"> <span class="animation7 small-circle"></span> <span class="animation8 small-circle"></span>
+      <div class="amount"><span class="amount-number">10</span> <span>k</span></div>
+      <p>Social Followers</p>
+    </div>
+  </div>
+</section>
+<section id="gallery" class="photos-section">
+  <div class="two-images clearfix"> <img src="images/image1.jpg" alt="image description" /> <img src="images/image2.jpg" alt="image description" /> </div>
+  <div class="full-image"> <img src="images/image3.jpg" alt="image description" /> </div>
+</section>
+<section id="testimonials" class="review-section"> <i class="fa fa-quote-right" aria-hidden="true"></i>
+  <div class="gallery slick-slider slick">
+    <div class="slide">
+      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </h3>
+      <p>Sam Smith</p>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do </span>
+    </div>
+    <div class="slide">
+      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </h3>
+      <p>Sam Smith1</p>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do </span>
+    </div>
+    <div class="slide">
+      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </h3>
+      <p>Sam Smith2</p>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do </span>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contacts">
+  <div class="col-sm-8 col-md-9">
+    <div class="map-holder">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3788.4903015883106!2d-78.34839848473636!3d18.279172781282224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ed90d078e3f2f6f%3A0x65fdd780f454363f!2sNorman+Manley+Blvd%2C+Negril%2C+Jamaica!5e0!3m2!1sen!2s!4v1501071099304"></iframe>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-3 contact-details"> <img class="full-image" src="images/contact.jpg" alt="image description" >
+    <h3>Business name</h3>
+    <ul class="list-info list-unstyled">
+      <li><i class="fa fa-map-marker"></i> 452 Norma Blvd. Nrgril</li>
+      <li><i class="fa fa-phone"></i> <a href="tel:8974329022">897-432-9022</a></li>
+      <li><i class="fa fa-envelope"></i> <a href="mailto:&#102;&#105;&#110;&#100;&#105;&#111;&#117;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#102;&#105;&#110;&#100;&#105;&#111;&#117;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></li>
+      <li><i class="fa fa-clock-o"></i> Open 8 am - 5 pm</li>
+      <li><i class="fa fa-home"></i> <a href="www.findious.com">www.findious.com</a> </li>
+    </ul>
+    <img class="outside-image" src="images/store-image.jpg" alt="image description" > </div>
+</section>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/dots.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/stepsForm.js"></script>
+<script src="main.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript" src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+<script>
+    var theForm = document.getElementById( 'theForm' );
+    var theForm2 = document.getElementById( 'theForm2' );
+
+    new stepsForm( theForm, {
+        onSubmit : function( form ) {
+            // hide form
+            classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+            /*
+             form.submit()
+             or
+             AJAX request (maybe show loading indicator while we don't have an answer..)
+             */
+
+            // let's just simulate something...
+            var messageEl = theForm.querySelector( '.final-message' );
+            messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+            classie.addClass( messageEl, 'show' );
+        }
+    } );
+    new stepsForm( theForm2, {
+        onSubmit : function( form ) {
+            // hide form
+            classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+            /*
+             form.submit()
+             or
+             AJAX request (maybe show loading indicator while we don't have an answer..)
+             */
+
+            // let's just simulate something...
+            var messageEl = theForm.querySelector( '.final-message' );
+            messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+            classie.addClass( messageEl, 'show' );
+        }
+    } );
+</script>
+</body>
+</html>

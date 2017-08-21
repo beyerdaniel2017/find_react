@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="loader">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Findious">
+  <meta name="author" content="Findious">
+  <title>Findious</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/component.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/componentForm.css" />
+  <link rel="stylesheet" href="css/style1.css">
+  <script src="js/modernizr.custom.js"></script>
+  <!-- <script src="js/custom.js"></script> -->
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+
+  <!-- Plain html goes here  -->
+
+
+    <!-- Our ract app runs here  -->
+  <div id="root"></div>
+
+
+  <!-- End of React scope. Static content heres  -->
+
+
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/dots.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/stepsForm.js"></script>
+  <script src="main.js"></script>
+  <script src="js/custom.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $.simpleWeather({
+        location: 'Austin, TX',
+        woeid: '',
+        unit: 'f',
+        success: function (weather) {
+          html = '<h2><i class="icon-' + weather.code + '"></i> ' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
+          html += '<ul><li>' + weather.city + ', ' + weather.region + '</li>';
+          html += '<li class="currently">' + weather.currently + '</li>';
+          html += '<li>' + weather.wind.direction + ' ' + weather.wind.speed + ' ' + weather.units.speed + '</li></ul>';
+
+          $("#weather").html(html);
+        },
+        error: function (error) {
+          $(".weather").html('<p>' + error + '</p>');
+        }
+      });
+    });
+
+
+
+
+    var theForm = document.getElementById('theForm');
+    var theForm2 = document.getElementById('theForm2');
+
+    new stepsForm(theForm, {
+      onSubmit: function (form) {
+        // hide form
+        classie.addClass(theForm.querySelector('.simform-inner'), 'hide');
+
+        /*
+         form.submit()
+         or
+         AJAX request (maybe show loading indicator while we don't have an answer..)
+         */
+
+        // let's just simulate something...
+        var messageEl = theForm.querySelector('.final-message');
+        messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+        classie.addClass(messageEl, 'show');
+      }
+    });
+    new stepsForm(theForm2, {
+      onSubmit: function (form) {
+        // hide form
+        classie.addClass(theForm.querySelector('.simform-inner'), 'hide');
+
+        /*
+         form.submit()
+         or
+         AJAX request (maybe show loading indicator while we don't have an answer..)
+         */
+
+        // let's just simulate something...
+        var messageEl = theForm.querySelector('.final-message');
+        messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+        classie.addClass(messageEl, 'show');
+      }
+    });
+
+     
+
+  </script>
+
+
+
+</body>
+
+</html>
